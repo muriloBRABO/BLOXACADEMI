@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Blox_Reis dos Piratas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-content {
+      width: 100%;
+      max-width: 420px;
+      background: #121212;
+      color: #f4f4f4;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      border: none;
+      background: transparent;
+      color: #f4f4f4;
+      font-size: 28px;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .modal form {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .modal label {
+      font-size: 0.95rem;
+      color: #d0d0d0;
+    }
+
+    .modal input {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid #444;
+      background: #1e1e1e;
+      color: #f4f4f4;
+    }
+
+    .modal input::placeholder {
+      color: #ffffff;
+    }
+
+    .modal button.button {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .small {
+      color: #c4c4c4;
+      font-size: 0.9rem;
+      margin-top: 14px;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      color: #ffffff;
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand-row">
+        
+        <h1 class="page-title">Blox Academy dos Piratas</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" id="loginBtn">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="main-container">
+   
+   
+
+    <details class="section-window">
+      <summary id="vulcao" class="section-title">🌋 Vulcão</summary>
+      <div class="section-content">
+        <img src="https://files.bo3.gg/uploads/image/112777/image/webp-b9ff00b1dfd38bd7991bd3aa00c51b15.webp" alt="Vulcão na Ilha Pré-Histórica" style="width: 100%; max-width: 800px; margin: 0 auto 20px auto; border-radius: 10px; display: block;">
+        <p>Para iniciar o Evento do Vulcão, o jogador precisará tocar em um fóssil/relíquia (não confundir com Relíquia Antiga) na frente do grande Crânio de T-Rex. Após tocá-lo, haverá um minijogo onde o jogador defenderá a relíquia de uma horda de inimigos que tentarão roubá-la. Ao concluir o minijogo, haverá ossos na lava que o jogador poderá coletar como material para criar itens. Uma porta preta também está presente em uma caverna, mas o jogador precisará da raça Draco para destrancá-la.</p>
+        <h3>Recompensas:</h3>
+        <ul>
+          <li>Ossos para criar itens raros</li>
+          <li>Frutas míticas (chance baixa)</li>
+          <li>Experiência extra</li>
+        </ul>
+        <h3>Dicas:</h3>
+        <p>Use frutas de defesa como Barrier ou Ice para sobreviver. Faça em grupo para facilitar.</p>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary id="tred1" class="section-title">⚔️ Tred 1</summary>
+      <div class="section-content">
+        <p>O Tred 1 é o primeiro nível de dificuldade para jogadores iniciantes. Localizado em [local], enfrente inimigos básicos para ganhar experiência e beli.</p>
+        <h3>Inimigos:</h3>
+        <ul>
+          <li>Bandits: Fáceis, drop beli baixo</li>
+          <li>Wolves: Mais agressivos, drop médio</li>
+
+        </ul>
+        <h3>Dicas:</h3>
+        <p>Use espada básica. Foque em combo para dano rápido.</p>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary id="tred2" class="section-title">⚔️ Tred 2</summary>
+      <div class="section-content">
+        <p>Tred 2 aumenta a dificuldade com inimigos mais fortes. Requer nível mínimo 100.</p>
+        <h3>Inimigos:</h3>
+        <ul>
+          <li>Desert Bandits: Usam armas, drop melhor</li>
+          <li>Sand Creatures: Resistentes a físico</li>
+        </ul>
+        <h3>Dicas:</h3>
+        <p>Use frutas elementais como Fire para vantagem.</p>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary id="tred3" class="section-title">⚔️ Tred 3</summary>
+      <div class="section-content">
+        <p>Tred 3 é para jogadores avançados, com bosses e elites. Nível mínimo 500.</p>
+        <h3>Inimigos:</h3>
+        <ul>
+          <li>Elite Pirates: Altos HP, drop raro</li>
+          <li>Boss: Captain [nome], recompensa alta</li>
+        </ul>
+        <h3>Dicas:</h3>
+        <p>Equipe completa, use awakenings.</p>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary id="raid" class="section-title">🏴‍☠️ Raid</summary>
+      <div class="section-content">
+        <img src="https://image.thenerdstash.com/2023/08/How-To-Start-A-Raid-In-Roblox-Blox-Fruits.jpg" alt="Raid em Blox Fruits" style="width: 100%; max-width: 800px; margin: 0 auto 20px auto; border-radius: 10px; display: block;">
+        <p>As Raids permitem ao jogador desbloquear movimentos despertados das Frutas Blox e obter Fragmentos. Elas também concedem títulos como Coração Partido (#098), O Conquistador (#099), Última Esperança (#100), O Supersônico (#101), O Flash (#102) e outros 17 títulos para o despertar de cada fruta.</p>
+        <p>Cada incursão no Blox Fruits tem cinco ilhas com inimigos, ficando mais difícil a cada uma. Você precisa derrotar todos pra liberar a próxima, e na última enfrenta um boss. Se completar com a fruta certa equipada, é teleportado pra sala onde pode despertar habilidades usando fragmentos. No final, você ganha entre 300 e 1.000 fragmentos, dependendo do tempo ou até onde chegou.</p>
+        <h3>Raids Disponíveis:</h3>
+        <ul>
+          <li>Flame Raid: Para despertar Flame</li>
+          <li>Ice Raid: Para Ice</li>
+          <li>Dark Raid: Para Dark</li>
+        <p>Faça em grupo de 3-4 pessoas. Use frutas logia para tankar.</p>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary id="farm" class="section-title">💰 Farm Beli</summary>
+      <div class="section-content">
+        <img src="https://www.charlieintel.com/cdn-image/wp-content/uploads/2023/09/12/blox-fruits-roblox-map-all-locations-npcs.jpg?width=1200&quality=60&format=auto" alt="Farm Beli em Blox Fruits" style="width: 100%; max-width: 800px; margin: 0 auto 20px auto; border-radius: 10px; display: block;">
+        <p>Farmar Beli é essencial para comprar frutas e itens. Locais eficientes:</p>
+        <h3>Melhores Lugares:</h3>
+        <ul>
+          <li>Starter Island: Para iniciantes, 5k-10k/h</li>
+          <li>Desert: 20k-50k/h com frutas</li>
+          <li>Marine Base: Alto risco, alto reward</li>
+        </ul>
+        <h3>Dicas:</h3>
+        <p>Use frutas de farm como Chop ou Spin. Faça quests diárias.</p>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary class="section-title">🍎 Frutas (Fruits)</summary>
+      <div class="section-content">
+        <a href="https://www.tiktok.com/discover/blox-fruits-tabela-de-frutas" target="_blank" rel="noopener noreferrer" style="display:block; margin:0 auto 20px auto; max-width:800px; text-align:center;">
+          <img src="https://via.placeholder.com/800x450.png?text=Veja+a+tabela+de+frutas+no+TikTok" alt="Tabela de Frutas Blox Fruits" style="width:100%; border-radius:10px; display:block;">
+        </a>
+        <p>As frutas Blox dão poderes especiais. Há tipos: Paramecia, Zoan, Logia.</p>
+        <h3>Frutas Populares:</h3>
+        <ul>
+          <li>Flame: Ataque fogo, preço médio</li>
+          <li>Ice: Controle gelo, rara</li>
+          <li>Dark: Poder escuro, mítica</li>
+          <li>Light: Luz sagrada, lendária</li>
+        </ul>
+        <h3>Como Obter:</h3>
+        <p>Comprar no dealer, spawn aleatório, eventos.</p>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary class="section-title">🏃 Raças (Races)</summary>
+      <div class="section-content">
+        <a href="https://www.reddit.com/r/bloxfruits/comments/1ja5l1g/what_race_should_i_get_to_v4/?tl=pt-br" target="_blank" rel="noopener noreferrer" style="display:block; margin:0 auto 20px auto; max-width:800px; text-align:center;">
+          <img src="https://via.placeholder.com/800x450.png?text=Veja+a+imagem+de+ra%C3%A7as+no+Reddit" alt="Raças Blox Fruits" style="width:100%; border-radius:10px; display:block;">
+        </a>
+        <p>Raças afetam stats e habilidades. Evolua para V2/V3.</p>
+        <h3>Raças Disponíveis:</h3>
+        <ul>
+          <li>Human: Equilibrada, fácil evolução</li>
+          <li>Fishman: Água, buffs em mar</li>
+          <li>Cyborg: Mecânica, alta defesa</li>
+          <li>Skypiean: Voo, mobilidade</li>
+          <li>Ghost: Invisibilidade, stealth</li>
+          <li>Mink: Velocidade, dash</li>
+        </ul>
+        <h3>Evolução:</h3>
+        <p>Complete quests e compre no dealer.</p>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary class="section-title">⚡ Builds e Combos</summary>
+      <div class="section-content">
+        <p>Builds otimizados para diferentes estilos.</p>
+        <h3>Build PvP:</h3>
+        <ul>
+          <li>Fruta: Dark + Race: Human V3</li>
+          <li>Armas: Dual Katana + Gun</li>
+        </ul>
+        <h3>Build Farm:</h3>
+        <ul>
+          <li>Fruta: Chop + Race: Mink</li>
+          <li>Foco em velocidade e dano</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary class="section-title">💡 Dicas Gerais</summary>
+      <div class="section-content">
+        <p>Dicas para progredir rápido.</p>
+        <ul>
+          <li>Faça quests diárias para XP extra</li>
+          <li>Grinde em áreas adequadas ao seu nível</li>
+          <li>Invista em frutas awakenadas</li>
+          <li>Junte-se a crews para raids</li>
+          <li>Economize beli para itens caros</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="section-window">
+      <summary id="eventos" class="section-title">📅 Atualizações</summary>
+      <div class="section-content">
+        <p>Últimas mudanças no jogo.</p>
+        <h3>Patch Recente:</h3>
+        <ul>
+          <li>Novas frutas: [exemplo]</li>
+          <li>Buffs em raids</li>
+          <li>Eventos sazonais</li>
+        </ul>
+        <p>Verifique o Discord oficial para mais.</p>
+      </div>
+    </details>
+
+
+  <div id="loginModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle">
+      <button type="button" class="modal-close" id="closeLoginModal" aria-label="Fechar">×</button>
+      <h2 id="loginModalTitle">Entrar</h2>
+      <p>Faça login para acessar dicas, eventos e estratégias do Blox Fruits.</p>
+      <form id="loginForm">
+        <label for="modalUsername">Usuário</label>
+        <input type="text" id="modalUsername" name="username" placeholder="Seu nome" required>
+
+        <label for="modalPassword">Senha</label>
+        <input type="password" id="modalPassword" name="password" placeholder="••••••••" required>
+
+        <button type="submit" class="button">Entrar</button>
+      </form>
+      <p class="small">Este login é apenas uma demonstração. Clique em "Entrar" para fechar a janela.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer" style="padding:20px; text-align:center;">
+    <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+      <a href="https://www.roblox.com/" target="_blank" style="background:#ff0000; color:white; text-decoration:none; padding:18px 90px; border-radius:12px; font-size:160%; font-weight:bold; display:inline-block; min-width:260px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3); transition:0.3s;">
+        🎮 Jogar Roblox
+      </a>
+      <a href="https://wa.me/5534998972659" target="_blank" rel="noopener noreferrer" style="background:#25D366; color:white; text-decoration:none; padding:18px 130px; border-radius:12px; font-size:160%; font-weight:bold; display:inline-block; min-width:260px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3); transition:0.3s;">
+        📱 Suporte
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    const loginBtn = document.getElementById('loginBtn');
+    const loginModal = document.getElementById('loginModal');
+    const closeLoginModal = document.getElementById('closeLoginModal');
+    const loginForm = document.getElementById('loginForm');
+
+    function openLogin() {
+      loginModal.classList.add('show');
+      loginModal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeLogin() {
+      loginModal.classList.remove('show');
+      loginModal.setAttribute('aria-hidden', 'true');
+    }
+
+    loginBtn?.addEventListener('click', function (event) {
+      event.preventDefault();
+      openLogin();
+    });
+
+    closeLoginModal?.addEventListener('click', closeLogin);
+
+    loginModal?.addEventListener('click', function (event) {
+      if (event.target === loginModal) {
+        closeLogin();
+      }
+    });
+
+    loginForm?.addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('Login simulado concluído!');
+      closeLogin();
+    });
+  </script>
+</body>
+</html>
