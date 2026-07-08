@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia Blox_Reis dos Piratas</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
@@ -98,163 +98,13 @@
       height: auto;
       display: block;
     }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #f4f4f4;
-      overflow-x: hidden;
-    }
-
-    header {
-      background: #111;
-      padding: 16px 0;
-      border-bottom: 1px solid #2a2a2a;
-    }
-
-    .container {
-      width: min(1120px, calc(100% - 24px));
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    nav ul {
-      display: flex;
-      gap: 12px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .main-container {
-      width: min(1120px, calc(100% - 24px));
-      margin: 20px auto 0;
-      display: grid;
-      gap: 14px;
-    }
-
-    .section-window {
-      background: #181818;
-      border: 1px solid #2b2b2b;
-      border-radius: 16px;
-      overflow: hidden;
-    }
-
-    .section-title {
-      cursor: pointer;
-      padding: 16px 18px;
-      font-size: 1.05rem;
-      font-weight: 700;
-      background: #232323;
-    }
-
-    .section-content {
-      padding: 16px 18px 20px;
-      line-height: 1.6;
-    }
-
-    .section-content img {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto 20px auto;
-      border-radius: 10px;
-      display: block;
-      height: auto;
-    }
-
-    .site-footer {
-      padding: 24px 12px 32px;
-      text-align: center;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .action-link {
-      background: #ff0000;
-      color: white;
-      text-decoration: none;
-      padding: 16px 24px;
-      border-radius: 12px;
-      font-size: 1.05rem;
-      font-weight: bold;
-      display: inline-block;
-      min-width: 220px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease;
-    }
-
-    .action-link:hover {
-      transform: translateY(-2px);
-    }
-
-    .action-link.support {
-      background: #25D366;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .page-title {
-        font-size: 1.4rem;
-      }
-
-      .main-container {
-        width: min(100%, calc(100% - 16px));
-        margin-top: 14px;
-      }
-
-      .section-title {
-        padding: 14px 15px;
-        font-size: 0.98rem;
-      }
-
-      .section-content {
-        padding: 14px 15px 18px;
-      }
-
-      .modal-content {
-        padding: 24px 18px;
-      }
-
-      .footer-links {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .action-link {
-        width: 100%;
-        min-width: 0;
-        padding: 14px 16px;
-        font-size: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
       <div class="brand-row">
-          
+        
         <h1 class="page-title">Blox Academy dos Piratas</h1>
       </div>
       <nav>
@@ -462,12 +312,12 @@
     </div>
   </div>
 
-  <footer class="site-footer">
-    <div class="footer-links">
-      <a href="https://www.roblox.com/" target="_blank" class="action-link">
+  <footer class="site-footer" style="padding:20px; text-align:center;">
+    <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+      <a href="https://www.roblox.com/" target="_blank" style="background:#ff0000; color:white; text-decoration:none; padding:18px 90px; border-radius:12px; font-size:160%; font-weight:bold; display:inline-block; min-width:260px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3); transition:0.3s;">
         🎮 Jogar Roblox
       </a>
-      <a href="https://wa.me/5534998972659" target="_blank" rel="noopener noreferrer" class="action-link support">
+      <a href="https://wa.me/5534998972659" target="_blank" rel="noopener noreferrer" style="background:#25D366; color:white; text-decoration:none; padding:18px 130px; border-radius:12px; font-size:160%; font-weight:bold; display:inline-block; min-width:260px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3); transition:0.3s;">
         📱 Suporte
       </a>
     </div>
